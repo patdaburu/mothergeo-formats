@@ -1,4 +1,4 @@
-# ![Img](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Azimutalprojektion-schief_kl-cropped.png/150px-Azimutalprojektion-schief_kl-cropped.png "MotherGeo Logo") MotherGeo Formats
+# ![Img](https://raw.githubusercontent.com/patdaburu/mothergeo-assets/master/images/png/48/logo.png "MotherGeo Logo") MotherGeo Formats
 
 ## Overview
 
@@ -9,6 +9,8 @@ This project contains schema descriptions for the MotherGeo project.
 ### `model.json`
 
 A `model.json` file describes a data model as well as explicit contracts between data providers and data consumers.  As the file extension suggests, it is expressed in [Javascript Object Notation (JSON)](<http://www.json.org/>) as a single JSON object.  This section details the document structure.
+
+While you're waiting for MotherGeo to provide model development tools, you can inspect existing model documents using one of the many free [JSON editors](<http://www.jsoneditoronline.org/>) that can be found online.
 
 ### General Structure
 
