@@ -41,6 +41,7 @@ This section defines the general structure of the *Model* object defined in a `m
     * *float* : a floating-point number
     * *datetime* : a moment in time
 * __width__ : indicates the size of the field and applies only to *text* types
+* __domain__ : constrains the allowed values in a field to a list
 * __source__ : contracts with source data providers
     * __requested__ : the source data provider is invited to provide the data that will appear in this field
     * __required__ : the source data provider *must* provide the data that will appear in this field
