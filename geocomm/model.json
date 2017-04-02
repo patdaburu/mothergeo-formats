@@ -1,0 +1,2300 @@
+{
+  "name": "GeoComm Unified Data Model",
+  "revision": {
+    "title": "March 15, 2013, Rev. 1",
+    "sequence": 20170315,
+    "authorName": "Pat Blair",
+    "authorEmail": "pat@daburu.net"
+  },
+  "spatial": {
+    "commonSrid" : 102100,
+    "commonFields": [
+      {
+        "name": "gcUnqID",
+        "type": "guid",
+        "width": null,
+        "source": {
+          "requested": false,
+          "required": false
+        },
+        "target": {
+          "calculated": true,
+          "guaranteed": true
+        },
+        "usage": {
+          "search": false,
+          "display": false
+        },
+        "nena": {
+          "analog": null,
+          "required": null
+        },
+        "i18n": {
+          "default": {
+            "friendlyName": "GeoComm Unique ID",
+            "description": "This value uniquely identifies this feature."
+          },
+          "ja_jp": {
+            "friendlyName": "プレースホルダ",
+            "description": "プレースホルダの説明"
+          }
+        }
+      },
+      {
+        "name": "gcLabel",
+        "type": "text",
+        "width": 100,
+        "source": {
+          "requested": true,
+          "required": false
+        },
+        "target": {
+          "calculated": true,
+          "guaranteed": true
+        },
+        "usage": {
+          "search": false,
+          "display": true
+        },
+        "nena": {
+          "analog": null,
+          "required": false
+        },
+        "i18n": {
+          "default": {
+            "friendlyName": "GeoComm Label",
+            "description": "How should the feature be identified in a label?"
+          },
+          "ja_jp": {
+            "friendlyName": "プレースホルダ",
+            "description": "プレースホルダの説明"
+          }
+        }
+      },
+      {
+        "name": "gcModDate",
+        "type": "datetime",
+        "width": null,
+        "source": {
+          "requested": false,
+          "required": false
+        },
+        "target": {
+          "calculated": true,
+          "guaranteed": false
+        },
+        "usage": {
+          "search": false,
+          "display": false
+        },
+        "nena": {
+          "analog": null,
+          "required": false
+        },
+        "i18n": {
+          "default": {
+            "friendlyName": "GeoComm Internal Date Update",
+            "description": "When was the feature last modified?"
+          },
+          "ja_jp": {
+            "friendlyName": "プレースホルダ",
+            "description": "プレースホルダの説明"
+          }
+        }
+      },
+      {
+        "name": "gcModType",
+        "type": "text",
+        "domain": [
+          "C",
+          "U"
+        ],
+        "width": 2,
+        "source": {
+          "requested": false,
+          "required": false
+        },
+        "target": {
+          "calculated": true,
+          "guaranteed": false
+        },
+        "usage": {
+          "search": false,
+          "display": false
+        },
+        "nena": {
+          "analog": null,
+          "required": false
+        },
+        "i18n": {
+          "default": {
+            "friendlyName": "GeoComm Modification Type",
+            "description": "Was the last modification an insertion, or an update?"
+          },
+          "ja_jp": {
+            "friendlyName": "プレースホルダ",
+            "description": "プレースホルダの説明"
+          }
+        }
+      },
+      {
+        "name": "gcEditBy",
+        "type": "text",
+        "width": 100,
+        "source": {
+          "requested": false,
+          "required": false
+        },
+        "target": {
+          "calculated": false,
+          "guaranteed": false
+        },
+        "usage": {
+          "search": false,
+          "display": false
+        },
+        "nena": {
+          "analog": null,
+          "required": false
+        },
+        "i18n": {
+          "default": {
+            "friendlyName": "GeoComm Editor Name",
+            "description": "Who last editied the feature?"
+          },
+          "ja_jp": {
+            "friendlyName": "プレースホルダ",
+            "description": "プレースホルダの説明"
+          }
+        }
+      },
+      {
+        "name": "gcException",
+        "type": "text",
+        "width": 75,
+        "source": {
+          "requested": false,
+          "required": false
+        },
+        "target": {
+          "calculated": true,
+          "guaranteed": false
+        },
+        "usage": {
+          "search": false,
+          "display": false
+        },
+        "nena": {
+          "analog": null,
+          "required": false
+        },
+        "i18n": {
+          "default": {
+            "friendlyName": "GeoComm Quality Assurance Error Code",
+            "description": "If a problem is detected with this feature, it's indicated here."
+          },
+          "ja_jp": {
+            "friendlyName": "プレースホルダ",
+            "description": "プレースホルダの説明"
+          }
+        }
+      },
+      {
+        "name": "srcOfData",
+        "type": "text",
+        "width": 75,
+        "source": {
+          "requested": false,
+          "required": false
+        },
+        "target": {
+          "calculated": false,
+          "guaranteed": false
+        },
+        "usage": {
+          "search": false,
+          "display": false
+        },
+        "nena": {
+          "analog": "Source",
+          "required": true
+        },
+        "i18n": {
+          "default": {
+            "friendlyName": "Data Source",
+            "description": "Who provided this data?"
+          },
+          "ja_jp": {
+            "friendlyName": "プレースホルダ",
+            "description": "プレースホルダの説明"
+          }
+        }
+      },
+      {
+        "name": "srcLastEd",
+        "type": "datetime",
+        "width": null,
+        "source": {
+          "requested": false,
+          "required": false
+        },
+        "target": {
+          "calculated": false,
+          "guaranteed": false
+        },
+        "usage": {
+          "search": false,
+          "display": false
+        },
+        "nena": {
+          "analog": null,
+          "required": null
+        },
+        "i18n": {
+          "default": {
+            "friendlyName": "Data Source",
+            "description": "Who provided this data?"
+          },
+          "ja_jp": {
+            "friendlyName": "プレースホルダ",
+            "description": "プレースホルダの説明"
+          }
+        }
+      },
+      {
+        "name": "uploaAuth",
+        "type": "text",
+        "width": 75,
+        "source": {
+          "requested": false,
+          "required": false
+        },
+        "target": {
+          "calculated": false,
+          "guaranteed": false
+        },
+        "usage": {
+          "search": false,
+          "display": false
+        },
+        "nena": {
+          "analog": null,
+          "required": null
+        },
+        "i18n": {
+          "default": {
+            "friendlyName": "Upload Authority",
+            "description": "On whose authority was the data uploaded?"
+          },
+          "ja_jp": {
+            "friendlyName": "プレースホルダ",
+            "description": "プレースホルダの説明"
+          }
+        }
+      },
+      {
+        "name": "updateDate",
+        "type": "datetime",
+        "width": null,
+        "source": {
+          "requested": false,
+          "required": false
+        },
+        "target": {
+          "calculated": false,
+          "guaranteed": false
+        },
+        "usage": {
+          "search": false,
+          "display": false
+        },
+        "nena": {
+          "analog": "Date Update",
+          "required": true
+        },
+        "i18n": {
+          "default": {
+            "friendlyName": "Date Updated",
+            "description": "When was this feature last updated?"
+          },
+          "ja_jp": {
+            "friendlyName": "プレースホルダ",
+            "description": "プレースホルダの説明"
+          }
+        }
+      },
+      {
+        "name": "Effective",
+        "type": "datetime",
+        "width": null,
+        "source": {
+          "requested": false,
+          "required": false
+        },
+        "target": {
+          "calculated": false,
+          "guaranteed": false
+        },
+        "usage": {
+          "search": false,
+          "display": false
+        },
+        "nena": {
+          "analog": "Effective",
+          "required": null
+        },
+        "i18n": {
+          "default": {
+            "friendlyName": "Effective Date",
+            "description": "When should the feature be considered valid?"
+          },
+          "ja_jp": {
+            "friendlyName": "プレースホルダ",
+            "description": "プレースホルダの説明"
+          }
+        }
+      },
+      {
+        "name": "Expire",
+        "type": "datetime",
+        "width": null,
+        "source": {
+          "requested": false,
+          "required": false
+        },
+        "target": {
+          "calculated": false,
+          "guaranteed": false
+        },
+        "usage": {
+          "search": false,
+          "display": false
+        },
+        "nena": {
+          "analog": "Expire",
+          "required": null
+        },
+        "i18n": {
+          "default": {
+            "friendlyName": "Expiration Date",
+            "description": "When should the feature no longer be considered valid?"
+          },
+          "ja_jp": {
+            "friendlyName": "プレースホルダ",
+            "description": "プレースホルダの説明"
+          }
+        }
+      },
+      {
+        "name": "srcUnqID",
+        "type": "text",
+        "width": 100,
+        "source": {
+          "requested": true,
+          "required": false
+        },
+        "target": {
+          "calculated": false,
+          "guaranteed": false
+        },
+        "usage": {
+          "search": false,
+          "display": false
+        },
+        "nena": {
+          "analog": null,
+          "required": true
+        },
+        "i18n": {
+          "default": {
+            "friendlyName": "Expiration Date",
+            "description": "When should the feature no longer be considered valid?"
+          },
+          "ja_jp": {
+            "friendlyName": "プレースホルダ",
+            "description": "プレースホルダの説明"
+          }
+        }
+      },
+      {
+        "name": "comments",
+        "type": "text",
+        "width": 100,
+        "source": {
+          "requested": true,
+          "required": false
+        },
+        "target": {
+          "calculated": false,
+          "guaranteed": false
+        },
+        "usage": {
+          "search": false,
+          "display": true
+        },
+        "nena": {
+          "analog": null,
+          "required": true
+        },
+        "i18n": {
+          "default": {
+            "friendlyName": "Comments",
+            "description": "Comments"
+          },
+          "ja_jp": {
+            "friendlyName": "プレースホルダ",
+            "description": "プレースホルダの説明"
+          }
+        }
+      }
+    ],
+    "featureClasses": [
+      {
+        "name": "RoadCenterline",
+        "geometryType": "Polyline",
+        "nena": {
+          "analog": "RoadCenterline",
+          "required": true
+        },
+        "i18n": {
+          "default": {
+            "friendlyName": "Roads",
+            "description": "Drive on these."
+          },
+          "ja_jp": {
+            "friendlyName": "プレースホルダ",
+            "description": "プレースホルダの説明"
+          }
+        },
+        "fields": [
+          {
+            "name": "srcFullNam",
+            "type": "text",
+            "width": 200,
+            "source": {
+              "requested": true,
+              "required": true
+            },
+            "target": {
+              "calculated": true,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": null,
+              "required": false
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Source Full Name",
+                "description": "Source Full Name"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "addRngPreL",
+            "type": "text",
+            "width": 15,
+            "source": {
+              "requested": true,
+              "required": true
+            },
+            "target": {
+              "calculated": true,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "AdNumPre_L",
+              "required": null
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Left Address Number Prefix",
+                "description": "Left Address Number Prefix"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "addRngPreR",
+            "type": "text",
+            "width": 15,
+            "source": {
+              "requested": true,
+              "required": true
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": true
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "AdNumPre_R",
+              "required": null
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Right Address Number Prefix",
+                "description": "Right Address Number Prefix"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "fromAddL",
+            "type": "int",
+            "width": 6,
+            "source": {
+              "requested": true,
+              "required": true
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": true
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "FromAddr_L",
+              "required": true
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Left Start Address",
+                "description": "The first address on the left side of the street."
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "toAddL",
+            "type": "int",
+            "width": 6,
+            "source": {
+              "requested": true,
+              "required": true
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": true
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "FromAddr_L",
+              "required": true
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Left End Address",
+                "description": "The last address on the left side of the street."
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "fromAddR",
+            "type": "int",
+            "width": 6,
+            "source": {
+              "requested": true,
+              "required": true
+            },
+            "target": {
+              "calculated": true,
+              "guaranteed": true
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "FromAddr_L",
+              "required": true
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Left Start Address",
+                "description": "The first address on the left side of the street."
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "toAddR",
+            "type": "int",
+            "width": 6,
+            "source": {
+              "requested": true,
+              "required": true
+            },
+            "target": {
+              "calculated": true,
+              "guaranteed": true
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "ToAddr_R",
+              "required": true
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Right Start Address",
+                "description": "The first address on the right side of the street."
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "rngType",
+            "type": "text",
+            "width": 1,
+            "domain": [ "A", "T" ],
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": null,
+              "required": false
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Ranging Type",
+                "description": "Ranging Type"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "parityL",
+            "type": "text",
+            "width": 1,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": "Parity_L",
+              "required": true
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Left Address Parity",
+                "description": "What's the parity of the address range on the left side of the street?"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "parityR",
+            "type": "text",
+            "width": 1,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": "Parity_R",
+              "required": true
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Right Address Parity",
+                "description": "What's the parity of the address range on the right side of the street?"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "preMod",
+            "type": "text",
+            "width": 15,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": true,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": "St_PreMod",
+              "required": false
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Street Name Prefix Modifier",
+                "description": "Street Name Prefix Modifier"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "preDir",
+            "type": "text",
+            "width": 9,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": true,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": "St_PreDir",
+              "required": false
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Street Name Pre-Directional",
+                "description": "Street Name Pre-Directional"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "preType",
+            "type": "text",
+            "width": 25,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": true,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": "St_PreTyp",
+              "required": false
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Street Name Pre Type",
+                "description": "Street Name Pre Type"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "preTypeSep",
+            "type": "text",
+            "width": 20,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": true,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": "St_PreSep",
+              "required": false
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Street Name Pre Type Separator",
+                "description": "Street Name Pre Type Separator"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "strName",
+            "type": "text",
+            "width": 60,
+            "source": {
+              "requested": true,
+              "required": false
+            },
+            "target": {
+              "calculated": true,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "StreetName",
+              "required": null
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Street Name",
+                "description": "Street Name"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "postType",
+            "type": "text",
+            "width": 15,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": true,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": "St_PosType",
+              "required": null
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Street Name Post Type",
+                "description": "Street Name Post Type"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "postDir",
+            "type": "text",
+            "width": 9,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": true,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": "St_PostDir",
+              "required": null
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Street Name Post Directional",
+                "description": "Street Name Post Directional"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "postMod",
+            "type": "text",
+            "width": 25,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": true,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": "St_PosMod",
+              "required": null
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Street Name Post Modifier",
+                "description": "Street Name Post Modifier"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "lgyPreDir",
+            "type": "text",
+            "width": 2,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": true,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": "LSt_PreDir",
+              "required": null
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Legacy Street Name Pre Directional",
+                "description": "Legacy Street Name Pre Directional"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "lgcyName",
+            "type": "text",
+            "width": 75,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": true,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": "LSt_Name",
+              "required": null
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Legacy Street Name",
+                "description": "Legacy Street Name"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "lgcyType",
+            "type": "text",
+            "width": 5,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": true,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": "LSt_Type",
+              "required": null
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Legacy Street Name Type",
+                "description": "Legacy Street Name Type"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "lgcyPstDir",
+            "type": "text",
+            "width": 2,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": true,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": "LStPosDir",
+              "required": null
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Legacy Street Name Post Directional",
+                "description": "Legacy Street Name Post Directional"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "esnL",
+            "type": "text",
+            "width": 5,
+            "source": {
+              "requested": true,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": "ESN_L",
+              "required": true
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "ESN Left",
+                "description": "What's the number of the Emergency Services Zone on the left side of the street?"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "esnR",
+            "type": "text",
+            "width": 5,
+            "source": {
+              "requested": true,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": "ESN_R",
+              "required": true
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "ESN Right",
+                "description": "What's the number of the Emergency Services Zone on the right side of the street?"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "msagCommL",
+            "type": "text",
+            "width": 5,
+            "source": {
+              "requested": true,
+              "required": true
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": true
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "MSAGComm_L",
+              "required": true
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "MSAG Community Name Left",
+                "description": "MSAG Community Name Left"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "msagCommR",
+            "type": "text",
+            "width": 5,
+            "source": {
+              "requested": true,
+              "required": true
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": true
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "MSAGComm_R",
+              "required": true
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "MSAG Community Name Right",
+                "description": "MSAG Community Name Right"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "countryL",
+            "type": "text",
+            "width": 2,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "Country_L",
+              "required": true
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Country Left",
+                "description": "Country Left"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "countryR",
+            "type": "text",
+            "width": 2,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "Country_R",
+              "required": true
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Country Right",
+                "description": "Country Right"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "stateL",
+            "type": "text",
+            "width": 2,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "State_L",
+              "required": true
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "State Left",
+                "description": "State Left"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "stateR",
+            "type": "text",
+            "width": 2,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "State_R",
+              "required": true
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "State Right",
+                "description": "State Right"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "countyL",
+            "type": "text",
+            "width": 40,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "County_L",
+              "required": true
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "County Left",
+                "description": "County Left"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "countyR",
+            "type": "text",
+            "width": 40,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "County_R",
+              "required": true
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "County Right",
+                "description": "County Right"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "addCodeL",
+            "type": "text",
+            "width": 6,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": "AddCode_L",
+              "required": null
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Additional Code Left",
+                "description": "Additional Code Left"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "addCodeR",
+            "type": "text",
+            "width": 6,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": "AddCode_R",
+              "required": true
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Additional Code Right",
+                "description": "Additional Code Right"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "incMuniL",
+            "type": "text",
+            "width": 2,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "incMuni_L",
+              "required": true
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Incorporated Municipality Left",
+                "description": "Incorporated Municipality Left"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "incMuniR",
+            "type": "text",
+            "width": 2,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "IncMuni_R",
+              "required": true
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Incorporated Municipality Right",
+                "description": "Incorporated Municipality Right"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "unincMuniL",
+            "type": "text",
+            "width": 100,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "incMuni_L",
+              "required": false
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Unincorporated Municipality Left",
+                "description": "Unincorporated Municipality Left"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "unincMuniR",
+            "type": "text",
+            "width": 100,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "IncMuni_R",
+              "required": false
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Unincorporated Municipality Right",
+                "description": "Unincorporated Municipality Right"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "nbrhdCommL",
+            "type": "text",
+            "width": 100,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "NbrhdCom_L",
+              "required": false
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Neighborhood Community Left",
+                "description": "Neighborhood Community Left"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "nbrhdCommR",
+            "type": "text",
+            "width": 100,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "NbrhdCom_L",
+              "required": false
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Neighborhood Community Right",
+                "description": "Neighborhood Community Right"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "zipCodeL",
+            "type": "text",
+            "width": 7,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": "PostCode_L",
+              "required": null
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Postal Code Left",
+                "description": "What's the postal code on the left side of the street?"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "zipCodeR",
+            "type": "text",
+            "width": 7,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": "PostCode_R",
+              "required": null
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Postal Code Right",
+                "description": "What's the postal code on the right side of the street?"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "postCommL",
+            "type": "text",
+            "width": 40,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "PostComm_L",
+              "required": null
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Postal Community Name Left",
+                "description": "Postal Community Name Left"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "postCommR",
+            "type": "text",
+            "width": 40,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "PostComm_R",
+              "required": null
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Postal Community Name Right",
+                "description": "Postal Community Name Right"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "roadClass",
+            "type": "text",
+            "domain": [
+              "Primary",
+              "Secondary",
+              "Local",
+              "Ramp",
+              "Service",
+              "Vehicular Trail",
+              "Walkway",
+              "Alley",
+              "Private",
+              "Parking Lot",
+              "Trail",
+              "Other"
+            ],
+            "width": 15,
+            "source": {
+              "requested": true,
+              "required": true
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": true
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": "RoadClass",
+              "required": true
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Road Class",
+                "description": "Road Class"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "oneWay",
+            "type": "text",
+            "width": 2,
+            "source": {
+              "requested": true,
+              "required": true
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "OneWay",
+              "required": null
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "One-Way",
+                "description": "One-Way"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "speedLimit",
+            "type": "int",
+            "source": {
+              "requested": true,
+              "required": true
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": "SpeedLimit",
+              "required": false
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "One-Way",
+                "description": "One-Way"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "minutes",
+            "type": "float",
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": true,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": null,
+              "required": false
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Minutes",
+                "description": "What's the estimated travel time (in minutes)?"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "length",
+            "type": "float",
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": true,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": null,
+              "required": false
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Length (in Miles)",
+                "description": "What's the length of the segment in miles?"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "fcc",
+            "type": "text",
+            "domain": [
+              "A00",
+              "A01",
+              "A02",
+              "A03",
+              "A04",
+              "A05",
+              "A06",
+              "A07",
+              "A08",
+              "A09",
+              "A10",
+              "A11",
+              "A12",
+              "A13",
+              "A14",
+              "A15",
+              "A16",
+              "A17",
+              "A18",
+              "A19",
+              "A20",
+              "A21",
+              "A22",
+              "A23",
+              "A24",
+              "A25",
+              "A26",
+              "A27",
+              "A28",
+              "A29",
+              "A30",
+              "A31",
+              "A32",
+              "A33",
+              "A34",
+              "A35",
+              "A36",
+              "A37",
+              "A38",
+              "A39",
+              "A40",
+              "A41",
+              "A42",
+              "A43",
+              "A44",
+              "A45",
+              "A46",
+              "A47",
+              "A48",
+              "A49",
+              "A50",
+              "A51",
+              "A52",
+              "A53",
+              "A54",
+              "A55",
+              "A56",
+              "A57",
+              "A58",
+              "A59",
+              "A60",
+              "A61",
+              "A62",
+              "A63",
+              "A64",
+              "A65",
+              "A66",
+              "A67",
+              "A68",
+              "A69",
+              "A70",
+              "A71",
+              "A72",
+              "A73",
+              "A74",
+              "A75"
+            ],
+            "width": 3,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": null,
+              "required": false
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Census Road Class",
+                "description": "Census Road Class"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "fZlevel",
+            "type": "float",
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": null,
+              "required": false
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "Start Elevation",
+                "description": "What's the elevation at the \"start\" node?"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "tZlevel",
+            "type": "float",
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": false,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": false,
+              "display": false
+            },
+            "nena": {
+              "analog": null,
+              "required": false
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "End Elevation",
+                "description": "What's the elevation at the \"end\" node?"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "gcFullName",
+            "type": "text",
+            "width": 100,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": true,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": null,
+              "required": false
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "GeoComm Full Name (CLDXF)",
+                "description": "GeoComm Full Name (CLDXF)"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          },
+          {
+            "name": "gcLgFlName",
+            "type": "text",
+            "width": 100,
+            "source": {
+              "requested": false,
+              "required": false
+            },
+            "target": {
+              "calculated": true,
+              "guaranteed": false
+            },
+            "usage": {
+              "search": true,
+              "display": true
+            },
+            "nena": {
+              "analog": null,
+              "required": true
+            },
+            "i18n": {
+              "default": {
+                "friendlyName": "GeoComm Full Name (Legacy)",
+                "description": "GeoComm Full Name (Legacy)"
+              },
+              "ja_jp": {
+                "friendlyName": "プレースホルダ",
+                "description": "プレースホルダの説明"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "name": "<NAME>",
+        "geometryType": "polyline",
+        "nena": true,
+        "i18n": {
+          "default": {
+            "friendlyName": "<FRIENDLY NAME>",
+            "description": "<DESCRIPTION>"
+          },
+          "ja_jp": {
+            "friendlyName": "プレースホルダ",
+            "description": "プレースホルダの説明"
+          }
+        },
+        "fields": []
+      },
+      {
+        "name": "<NAME>",
+        "geometryType": "polyline",
+        "nena": true,
+        "i18n": {
+          "default": {
+            "friendlyName": "<FRIENDLY NAME>",
+            "description": "<DESCRIPTION>"
+          },
+          "ja_jp": {
+            "friendlyName": "プレースホルダ",
+            "description": "プレースホルダの説明"
+          }
+        },
+        "fields": []
+      },
+      {
+        "name": "<NAME>",
+        "geometryType": "polyline",
+        "nena": true,
+        "i18n": {
+          "default": {
+            "friendlyName": "<FRIENDLY NAME>",
+            "description": "<DESCRIPTION>"
+          },
+          "ja_jp": {
+            "friendlyName": "プレースホルダ",
+            "description": "プレースホルダの説明"
+          }
+        },
+        "fields": []
+      },
+      {
+        "name": "<NAME>",
+        "geometryType": "polyline",
+        "nena": true,
+        "i18n": {
+          "default": {
+            "friendlyName": "<FRIENDLY NAME>",
+            "description": "<DESCRIPTION>"
+          },
+          "ja_jp": {
+            "friendlyName": "プレースホルダ",
+            "description": "プレースホルダの説明"
+          }
+        },
+        "fields": []
+      }
+    ]
+  }
+}
