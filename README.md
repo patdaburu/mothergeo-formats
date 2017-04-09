@@ -43,6 +43,10 @@ This section defines the general structure of the *Model* object defined in a `m
 * __width__ : indicates the size of the field and applies only to *text* types
 * __domain__ : constrains the allowed values in a field to a list
 * __source__ : contracts with source data providers
+    * __requirement__ : the requirement upon the source data to provide the data in this field
+        * *null* or *none* : the source data is neither required, nor requested, to provide this data field
+        * *requested* : the source data may, optionally, provide this data field
+        * *required* : the source data *must* provide this data field
     * __requested__ : the source data provider is invited to provide the data that will appear in this field
     * __required__ : the source data provider *must* provide the data that will appear in this field
 * __target__ : contracts with the target data consumer and advice to `Mother` to be used during processing
