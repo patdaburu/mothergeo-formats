@@ -34,6 +34,7 @@ This section defines the general structure of the *Model* object defined in a `m
 *Field* objects define fields (*a.k.a.* columns, attributes, *etc*) in tables and featureclasses.
 
 * __name__ : the *actual* name of the field as it will appear in the `Mother` database
+* __unique__ : a flag indicating whether or not the values in this field must be unique
 * __type__ : the data type
     * *guid* : a [globally unique identifier](<https://betterexplained.com/articles/the-quick-guide-to-guids/>)
     * *text* : strings of text
@@ -55,7 +56,7 @@ This section defines the general structure of the *Model* object defined in a `m
 * __usage__ : indicates how the data in this field is intended to be used
     * __search__ : the data in this field may be used to find a row
     * __display__ : the data in this field may be used to display information about a row
-* __nena__ : [NENA specification] information as defined by a [nena](#nena) object.
+* __nena__ : [NENA specification](<http://c.ymcdn.com/sites/www.nena.org/resource/collection/C74A8084-E3BD-405D-93C2-48AFCFA5B490/NENA_02-014-v1_GIS_Data_Collection_and_Maintenance.pdf>) information as defined by a [nena](#nena) object.
 * __i18n__ : internationalized label information; each supported language is identified by its ISO code and defined by an [i18n](#i18n) object.
 
 ### FeatureClass

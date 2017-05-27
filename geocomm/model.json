@@ -11,7 +11,8 @@
     "commonFields": [
       {
         "name": "gcUnqID",
-        "type": "guid",
+        "unique": true,
+        "type": "uuid",
         "width": null,
         "source": {
           "requirement" : null
@@ -41,6 +42,7 @@
       },
       {
         "name": "gcLabel",
+        "unique": false,
         "type": "text",
         "width": 100,
         "source": {
@@ -71,6 +73,7 @@
       },
       {
         "name": "gcModDate",
+        "unique": false,
         "type": "datetime",
         "width": null,
         "source": {
@@ -101,6 +104,7 @@
       },
       {
         "name": "gcModType",
+        "unique": false,
         "type": "text",
         "domain": [
           "C",
@@ -135,6 +139,7 @@
       },
       {
         "name": "gcEditBy",
+        "unique": false,
         "type": "text",
         "width": 100,
         "source": {
@@ -165,6 +170,7 @@
       },
       {
         "name": "gcException",
+        "unique": false,
         "type": "text",
         "width": 75,
         "source": {
@@ -195,6 +201,7 @@
       },
       {
         "name": "srcOfData",
+        "unique": false,
         "type": "text",
         "width": 75,
         "source": {
@@ -225,6 +232,7 @@
       },
       {
         "name": "srcLastEd",
+        "unique": false,
         "type": "datetime",
         "width": null,
         "source": {
@@ -254,7 +262,8 @@
         }
       },
       {
-        "name": "uploaAuth",
+        "name": "uploadAuth",
+        "unique": false,
         "type": "text",
         "width": 75,
         "source": {
@@ -285,6 +294,7 @@
       },
       {
         "name": "updateDate",
+        "unique": false,
         "type": "datetime",
         "width": null,
         "source": {
@@ -315,6 +325,7 @@
       },
       {
         "name": "Effective",
+        "unique": false,
         "type": "datetime",
         "width": null,
         "source": {
@@ -345,6 +356,7 @@
       },
       {
         "name": "Expire",
+        "unique": false,
         "type": "datetime",
         "width": null,
         "source": {
@@ -375,6 +387,7 @@
       },
       {
         "name": "srcUnqID",
+        "unique": false,
         "type": "text",
         "width": 100,
         "source": {
@@ -405,6 +418,7 @@
       },
       {
         "name": "comments",
+        "unique": false,
         "type": "text",
         "width": 100,
         "source": {
@@ -455,6 +469,7 @@
         "fields": [
           {
             "name": "srcFullNam",
+            "unique": false,
             "type": "text",
             "width": 200,
             "source": {
@@ -485,6 +500,7 @@
           },
           {
             "name": "addRngPreL",
+            "unique": false,
             "type": "text",
             "width": 15,
             "source": {
@@ -515,6 +531,7 @@
           },
           {
             "name": "addRngPreR",
+            "unique": false,
             "type": "text",
             "width": 15,
             "source": {
@@ -545,6 +562,7 @@
           },
           {
             "name": "fromAddL",
+            "unique": false,
             "type": "int",
             "width": 6,
             "source": {
@@ -575,6 +593,7 @@
           },
           {
             "name": "toAddL",
+            "unique": false,
             "type": "int",
             "width": 6,
             "source": {
@@ -605,6 +624,7 @@
           },
           {
             "name": "fromAddR",
+            "unique": false,
             "type": "int",
             "width": 6,
             "source": {
@@ -635,6 +655,7 @@
           },
           {
             "name": "toAddR",
+            "unique": false,
             "type": "int",
             "width": 6,
             "source": {
@@ -665,6 +686,7 @@
           },
           {
             "name": "rngType",
+            "unique": false,
             "type": "text",
             "width": 1,
             "domain": [ "A", "T" ],
@@ -696,6 +718,7 @@
           },
           {
             "name": "parityL",
+            "unique": false,
             "type": "text",
             "width": 1,
             "source": {
@@ -726,6 +749,7 @@
           },
           {
             "name": "parityR",
+            "unique": false,
             "type": "text",
             "width": 1,
             "source": {
@@ -756,6 +780,7 @@
           },
           {
             "name": "preMod",
+            "unique": false,
             "type": "text",
             "width": 15,
             "source": {
@@ -786,6 +811,7 @@
           },
           {
             "name": "preDir",
+            "unique": false,
             "type": "text",
             "width": 9,
             "source": {
@@ -816,6 +842,7 @@
           },
           {
             "name": "preType",
+            "unique": false,
             "type": "text",
             "width": 25,
             "source": {
@@ -846,6 +873,7 @@
           },
           {
             "name": "preTypeSep",
+            "unique": false,
             "type": "text",
             "width": 20,
             "source": {
@@ -876,6 +904,7 @@
           },
           {
             "name": "strName",
+            "unique": false,
             "type": "text",
             "width": 60,
             "source": {
@@ -906,6 +935,7 @@
           },
           {
             "name": "postType",
+            "unique": false,
             "type": "text",
             "width": 15,
             "source": {
@@ -936,6 +966,7 @@
           },
           {
             "name": "postDir",
+            "unique": false,
             "type": "text",
             "width": 9,
             "source": {
@@ -966,6 +997,7 @@
           },
           {
             "name": "postMod",
+            "unique": false,
             "type": "text",
             "width": 25,
             "source": {
@@ -996,6 +1028,7 @@
           },
           {
             "name": "lgyPreDir",
+            "unique": false,
             "type": "text",
             "width": 2,
             "source": {
@@ -1026,6 +1059,7 @@
           },
           {
             "name": "lgcyName",
+            "unique": false,
             "type": "text",
             "width": 75,
             "source": {
@@ -1056,6 +1090,7 @@
           },
           {
             "name": "lgcyType",
+            "unique": false,
             "type": "text",
             "width": 5,
             "source": {
@@ -1086,6 +1121,7 @@
           },
           {
             "name": "lgcyPstDir",
+            "unique": false,
             "type": "text",
             "width": 2,
             "source": {
@@ -1116,6 +1152,7 @@
           },
           {
             "name": "esnL",
+            "unique": false,
             "type": "text",
             "width": 5,
             "source": {
@@ -1146,6 +1183,7 @@
           },
           {
             "name": "esnR",
+            "unique": false,
             "type": "text",
             "width": 5,
             "source": {
@@ -1176,6 +1214,7 @@
           },
           {
             "name": "msagCommL",
+            "unique": false,
             "type": "text",
             "width": 5,
             "source": {
@@ -1206,6 +1245,7 @@
           },
           {
             "name": "msagCommR",
+            "unique": false,
             "type": "text",
             "width": 5,
             "source": {
@@ -1236,6 +1276,7 @@
           },
           {
             "name": "countryL",
+            "unique": false,
             "type": "text",
             "width": 2,
             "source": {
@@ -1266,6 +1307,7 @@
           },
           {
             "name": "countryR",
+            "unique": false,
             "type": "text",
             "width": 2,
             "source": {
@@ -1296,6 +1338,7 @@
           },
           {
             "name": "stateL",
+            "unique": false,
             "type": "text",
             "width": 2,
             "source": {
@@ -1326,6 +1369,7 @@
           },
           {
             "name": "stateR",
+            "unique": false,
             "type": "text",
             "width": 2,
             "source": {
@@ -1356,6 +1400,7 @@
           },
           {
             "name": "countyL",
+            "unique": false,
             "type": "text",
             "width": 40,
             "source": {
@@ -1386,6 +1431,7 @@
           },
           {
             "name": "countyR",
+            "unique": false,
             "type": "text",
             "width": 40,
             "source": {
@@ -1416,6 +1462,7 @@
           },
           {
             "name": "addCodeL",
+            "unique": false,
             "type": "text",
             "width": 6,
             "source": {
@@ -1446,6 +1493,7 @@
           },
           {
             "name": "addCodeR",
+            "unique": false,
             "type": "text",
             "width": 6,
             "source": {
@@ -1476,6 +1524,7 @@
           },
           {
             "name": "incMuniL",
+            "unique": false,
             "type": "text",
             "width": 2,
             "source": {
@@ -1506,6 +1555,7 @@
           },
           {
             "name": "incMuniR",
+            "unique": false,
             "type": "text",
             "width": 2,
             "source": {
@@ -1536,6 +1586,7 @@
           },
           {
             "name": "unincMuniL",
+            "unique": false,
             "type": "text",
             "width": 100,
             "source": {
@@ -1566,6 +1617,7 @@
           },
           {
             "name": "unincMuniR",
+            "unique": false,
             "type": "text",
             "width": 100,
             "source": {
@@ -1596,6 +1648,7 @@
           },
           {
             "name": "nbrhdCommL",
+            "unique": false,
             "type": "text",
             "width": 100,
             "source": {
@@ -1626,6 +1679,7 @@
           },
           {
             "name": "nbrhdCommR",
+            "unique": false,
             "type": "text",
             "width": 100,
             "source": {
@@ -1656,6 +1710,7 @@
           },
           {
             "name": "zipCodeL",
+            "unique": false,
             "type": "text",
             "width": 7,
             "source": {
@@ -1686,6 +1741,7 @@
           },
           {
             "name": "zipCodeR",
+            "unique": false,
             "type": "text",
             "width": 7,
             "source": {
@@ -1716,6 +1772,7 @@
           },
           {
             "name": "postCommL",
+            "unique": false,
             "type": "text",
             "width": 40,
             "source": {
@@ -1746,6 +1803,7 @@
           },
           {
             "name": "postCommR",
+            "unique": false,
             "type": "text",
             "width": 40,
             "source": {
@@ -1776,6 +1834,7 @@
           },
           {
             "name": "roadClass",
+            "unique": false,
             "type": "text",
             "domain": [
               "Primary",
@@ -1820,6 +1879,7 @@
           },
           {
             "name": "oneWay",
+            "unique": false,
             "type": "text",
             "width": 2,
             "source": {
@@ -1850,6 +1910,7 @@
           },
           {
             "name": "speedLimit",
+            "unique": false,
             "type": "int",
             "source": {
               "requirement" : "required"
@@ -1879,6 +1940,7 @@
           },
           {
             "name": "minutes",
+            "unique": false,
             "type": "float",
             "source": {
               "requirement" : null
@@ -1908,6 +1970,7 @@
           },
           {
             "name": "length",
+            "unique": false,
             "type": "float",
             "source": {
               "requirement" : null
@@ -1937,6 +2000,7 @@
           },
           {
             "name": "fcc",
+            "unique": false,
             "type": "text",
             "domain": [
               "A00",
@@ -2045,6 +2109,7 @@
           },
           {
             "name": "fZlevel",
+            "unique": false,
             "type": "float",
             "source": {
               "requirement" : null
@@ -2074,6 +2139,7 @@
           },
           {
             "name": "tZlevel",
+            "unique": false,
             "type": "float",
             "source": {
               "requirement" : null
@@ -2103,6 +2169,7 @@
           },
           {
             "name": "gcFullName",
+            "unique": false,
             "type": "text",
             "width": 100,
             "source": {
@@ -2133,6 +2200,7 @@
           },
           {
             "name": "gcLgFlName",
+            "unique": false,
             "type": "text",
             "width": 100,
             "source": {
@@ -2165,6 +2233,7 @@
       },
       {
         "name": "<NAME>",
+        "unique": false,
         "geometryType": "polyline",
         "nena": true,
         "i18n": {
@@ -2181,6 +2250,7 @@
       },
       {
         "name": "<NAME>",
+        "unique": false,
         "geometryType": "polyline",
         "nena": true,
         "i18n": {
@@ -2197,6 +2267,7 @@
       },
       {
         "name": "<NAME>",
+        "unique": false,
         "geometryType": "polyline",
         "nena": true,
         "i18n": {
@@ -2213,6 +2284,7 @@
       },
       {
         "name": "<NAME>",
+        "unique": false,
         "geometryType": "polyline",
         "nena": true,
         "i18n": {
