@@ -448,6 +448,7 @@
         }
       }
     ],
+    "defaultIdentity": "gcUnqID",
     "featureClasses": [
       {
         "name": "RoadCenterline",
@@ -473,7 +474,11 @@
             "type": "text",
             "width": 200,
             "source": {
-              "requirement" : "required"
+              "requirement" : "required",
+              "analogs" : [
+                "street_nam?",
+                "strnam?"
+              ]
             },
             "target": {
               "calculated": true,

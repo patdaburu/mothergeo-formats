@@ -17,7 +17,6 @@ While you're waiting for MotherGeo to provide model development tools, you can i
 This section defines the general structure of the *Model* object defined in a `model.json` file.
 
 * __name__ : human-readable name for the model
-
 * __revision__ : publication information
     * __title__ : human-readable identification of the specific revision
     * __sequence__ : increments with each new revision and can be used to determine if one version of the model is more recent than another
@@ -27,6 +26,7 @@ This section defines the general structure of the *Model* object defined in a `m
 * __spatial__ : information pertaining to spatial portions of the model (*e.g.* featureclasses)
     * __commonSrid__ : the common [spatial reference ID (SRID)](<https://en.wikipedia.org/wiki/Spatial_reference_system>) for all spatial data
     * __commonFields[]__ : definitions of [fields](#field) common to every [featureclass](#featureclass)
+    * __defaultIdentity__ : the name of the field used as the identity field in cases where no other field is supplied
     * __featureClasses__ : definitions of [featureclasses](#featureclass) included in the model
     
 ### Field
@@ -50,6 +50,7 @@ This section defines the general structure of the *Model* object defined in a `m
         * *required* : the source data *must* provide this data field
     * __requested__ : the source data provider is invited to provide the data that will appear in this field
     * __required__ : the source data provider *must* provide the data that will appear in this field
+    * __analogs__ : a list of field name patterns that may be found in source data to hold data appropriate for this field
 * __target__ : contracts with the target data consumer and advice to `Mother` to be used during processing
     * __calculated__ : the value in this field is calculated
     * __guaranteed__ : this field is guaranteed to have a non-empty value
@@ -64,6 +65,8 @@ This section defines the general structure of the *Model* object defined in a `m
 *Featureclasses* objects define collections of spatial objects that share a common geometry type and common attribution.
 
 * __name__ : the *actual* name of the featureclass as it appears in a `Mother` database
+* __identity__ : the name of the field that contains the identity value for each feature
+    *When no identity field is specified, the default identity defined for the format may be assumed.*
 * __geometryType__ : the type of the geometry contained in the featureclass
     * *Point* : a point geometry
     * *Polyline* : a polyline geometry
