@@ -13,7 +13,7 @@
         "name": "gcUnqID",
         "unique": true,
         "type": "uuid",
-        "width": null,
+        "preferences": null,
         "source": {
           "requirement" : null
         },
@@ -44,7 +44,7 @@
         "name": "gcLabel",
         "unique": false,
         "type": "text",
-        "width": 100,
+        "preferences": { "length": 100 },
         "source": {
           "requirement" : "requested"
         },
@@ -75,7 +75,7 @@
         "name": "gcModDate",
         "unique": false,
         "type": "datetime",
-        "width": null,
+        "preferences": null,
         "source": {
           "requirement" : null
         },
@@ -110,7 +110,7 @@
           "C",
           "U"
         ],
-        "width": 2,
+        "preferences": { "length": 2 },
         "source": {
           "requirement" : null
         },
@@ -141,7 +141,7 @@
         "name": "gcEditBy",
         "unique": false,
         "type": "text",
-        "width": 100,
+        "preferences": { "length": 100 },
         "source": {
           "requirement" : null
         },
@@ -172,7 +172,7 @@
         "name": "gcException",
         "unique": false,
         "type": "text",
-        "width": 75,
+        "preferences": { "length": 75 },
         "source": {
           "requirement" : null
         },
@@ -203,7 +203,7 @@
         "name": "srcOfData",
         "unique": false,
         "type": "text",
-        "width": 75,
+        "preferences": { "length": 75 },
         "source": {
           "requirement" : null
         },
@@ -234,7 +234,7 @@
         "name": "srcLastEd",
         "unique": false,
         "type": "datetime",
-        "width": null,
+        "preferences": null,
         "source": {
           "requirement" : null
         },
@@ -265,7 +265,7 @@
         "name": "uploadAuth",
         "unique": false,
         "type": "text",
-        "width": 75,
+        "preferences": { "length": 75 },
         "source": {
           "requirement" : null
         },
@@ -296,7 +296,7 @@
         "name": "updateDate",
         "unique": false,
         "type": "datetime",
-        "width": null,
+        "preferences": null,
         "source": {
           "requirement" : null
         },
@@ -327,7 +327,7 @@
         "name": "Effective",
         "unique": false,
         "type": "datetime",
-        "width": null,
+        "preferences": null,
         "source": {
           "requirement" : null
         },
@@ -358,7 +358,7 @@
         "name": "Expire",
         "unique": false,
         "type": "datetime",
-        "width": null,
+        "preferences": null,
         "source": {
           "requirement" : null
         },
@@ -389,7 +389,7 @@
         "name": "srcUnqID",
         "unique": false,
         "type": "text",
-        "width": 100,
+        "preferences": { "length": 100 },
         "source": {
           "requirement" : "requested"
         },
@@ -420,7 +420,7 @@
         "name": "comments",
         "unique": false,
         "type": "text",
-        "width": 100,
+        "preferences": { "length": 100 },
         "source": {
           "requirement" : "requested"
         },
@@ -472,7 +472,7 @@
             "name": "srcFullNam",
             "unique": false,
             "type": "text",
-            "width": 200,
+            "preferences": { "length": 200 },
             "source": {
               "requirement" : "required",
               "analogs" : [
@@ -507,7 +507,7 @@
             "name": "addRngPreL",
             "unique": false,
             "type": "text",
-            "width": 15,
+            "preferences": { "length": 15 },
             "source": {
               "requirement" : "required"
             },
@@ -538,7 +538,7 @@
             "name": "addRngPreR",
             "unique": false,
             "type": "text",
-            "width": 15,
+            "preferences": { "length": 15 },
             "source": {
               "requirement" : "required"
             },
@@ -569,7 +569,7 @@
             "name": "fromAddL",
             "unique": false,
             "type": "int",
-            "width": 6,
+            "preferences": null,
             "source": {
               "requirement" : "required"
             },
@@ -600,7 +600,7 @@
             "name": "toAddL",
             "unique": false,
             "type": "int",
-            "width": 6,
+            "preferences": null,
             "source": {
               "requirement" : "required"
             },
@@ -631,7 +631,7 @@
             "name": "fromAddR",
             "unique": false,
             "type": "int",
-            "width": 6,
+            "preferences": null,
             "source": {
               "requirement" : "required"
             },
@@ -662,7 +662,7 @@
             "name": "toAddR",
             "unique": false,
             "type": "int",
-            "width": 6,
+            "preferences": null,
             "source": {
               "requirement" : "required"
             },
@@ -693,7 +693,7 @@
             "name": "rngType",
             "unique": false,
             "type": "text",
-            "width": 1,
+            "preferences": { "length": 1 },
             "domain": [ "A", "T" ],
             "source": {
               "requirement" : null
@@ -725,7 +725,7 @@
             "name": "parityL",
             "unique": false,
             "type": "text",
-            "width": 1,
+            "preferences": { "length": 1 },
             "source": {
               "requirement" : null
             },
@@ -756,7 +756,7 @@
             "name": "parityR",
             "unique": false,
             "type": "text",
-            "width": 1,
+            "preferences": { "length": 1 },
             "source": {
               "requirement" : null
             },
@@ -787,7 +787,7 @@
             "name": "preMod",
             "unique": false,
             "type": "text",
-            "width": 15,
+            "preferences": { "length": 15 },
             "source": {
               "requirement" : null
             },
@@ -818,7 +818,7 @@
             "name": "preDir",
             "unique": false,
             "type": "text",
-            "width": 9,
+            "preferences": { "length": 9 },
             "source": {
               "requirement" : null
             },
@@ -849,7 +849,7 @@
             "name": "preType",
             "unique": false,
             "type": "text",
-            "width": 25,
+            "preferences": { "length": 25 },
             "source": {
               "requirement" : null
             },
@@ -880,7 +880,7 @@
             "name": "preTypeSep",
             "unique": false,
             "type": "text",
-            "width": 20,
+            "preferences": { "length": 20 },
             "source": {
               "requirement" : null
             },
@@ -911,7 +911,7 @@
             "name": "strName",
             "unique": false,
             "type": "text",
-            "width": 60,
+            "preferences": { "length": 60 },
             "source": {
               "requirement" : "requested"
             },
@@ -942,7 +942,7 @@
             "name": "postType",
             "unique": false,
             "type": "text",
-            "width": 15,
+            "preferences": { "length": 15 },
             "source": {
               "requirement" : null
             },
@@ -973,7 +973,7 @@
             "name": "postDir",
             "unique": false,
             "type": "text",
-            "width": 9,
+            "preferences": { "length": 9 },
             "source": {
               "requirement" : null
             },
@@ -1004,7 +1004,7 @@
             "name": "postMod",
             "unique": false,
             "type": "text",
-            "width": 25,
+            "preferences": { "length": 25 },
             "source": {
               "requirement" : null
             },
@@ -1035,7 +1035,7 @@
             "name": "lgyPreDir",
             "unique": false,
             "type": "text",
-            "width": 2,
+            "preferences": { "length": 2 },
             "source": {
               "requirement" : "null"
             },
@@ -1066,7 +1066,7 @@
             "name": "lgcyName",
             "unique": false,
             "type": "text",
-            "width": 75,
+            "preferences": { "length": 75 },
             "source": {
               "requirement" : null
             },
@@ -1097,7 +1097,7 @@
             "name": "lgcyType",
             "unique": false,
             "type": "text",
-            "width": 5,
+            "preferences": { "length": 5 },
             "source": {
               "requirement" : null
             },
@@ -1128,7 +1128,7 @@
             "name": "lgcyPstDir",
             "unique": false,
             "type": "text",
-            "width": 2,
+            "preferences": { "length": 2 },
             "source": {
               "requirement" : null
             },
@@ -1159,7 +1159,7 @@
             "name": "esnL",
             "unique": false,
             "type": "text",
-            "width": 5,
+            "preferences": { "length": 5 },
             "source": {
               "requirement" : "requested"
             },
@@ -1190,7 +1190,7 @@
             "name": "esnR",
             "unique": false,
             "type": "text",
-            "width": 5,
+            "preferences": { "length": 5 },
             "source": {
               "requirement" : "requested"
             },
@@ -1221,7 +1221,7 @@
             "name": "msagCommL",
             "unique": false,
             "type": "text",
-            "width": 5,
+            "preferences": { "length": 5 },
             "source": {
               "requirement" : "required"
             },
@@ -1252,7 +1252,7 @@
             "name": "msagCommR",
             "unique": false,
             "type": "text",
-            "width": 5,
+            "preferences": { "length": 5 },
             "source": {
               "requirement" : "required"
             },
@@ -1283,7 +1283,7 @@
             "name": "countryL",
             "unique": false,
             "type": "text",
-            "width": 2,
+            "preferences": { "length": 2 },
             "source": {
               "requirement" : null
             },
@@ -1314,7 +1314,7 @@
             "name": "countryR",
             "unique": false,
             "type": "text",
-            "width": 2,
+            "preferences": { "length": 2 },
             "source": {
               "requirement" : null
             },
@@ -1345,7 +1345,7 @@
             "name": "stateL",
             "unique": false,
             "type": "text",
-            "width": 2,
+            "preferences": { "length": 2 },
             "source": {
               "requirement" : null
             },
@@ -1376,7 +1376,7 @@
             "name": "stateR",
             "unique": false,
             "type": "text",
-            "width": 2,
+            "preferences": { "length": 2 },
             "source": {
               "requirement" : null
             },
@@ -1407,7 +1407,7 @@
             "name": "countyL",
             "unique": false,
             "type": "text",
-            "width": 40,
+            "preferences": { "length": 40 },
             "source": {
               "requirement" : null
             },
@@ -1438,7 +1438,7 @@
             "name": "countyR",
             "unique": false,
             "type": "text",
-            "width": 40,
+            "preferences": { "length": 40 },
             "source": {
               "requirement" : null
             },
@@ -1469,7 +1469,7 @@
             "name": "addCodeL",
             "unique": false,
             "type": "text",
-            "width": 6,
+            "preferences": { "length": 6 },
             "source": {
               "requirement" : null
             },
@@ -1500,7 +1500,7 @@
             "name": "addCodeR",
             "unique": false,
             "type": "text",
-            "width": 6,
+            "preferences": { "length": 6 },
             "source": {
               "requirement" : null
             },
@@ -1531,7 +1531,7 @@
             "name": "incMuniL",
             "unique": false,
             "type": "text",
-            "width": 2,
+            "preferences": { "length": 2 },
             "source": {
               "requirement" : null
             },
@@ -1562,7 +1562,7 @@
             "name": "incMuniR",
             "unique": false,
             "type": "text",
-            "width": 2,
+            "preferences": { "length": 2 },
             "source": {
               "requirement" : null
             },
@@ -1593,7 +1593,7 @@
             "name": "unincMuniL",
             "unique": false,
             "type": "text",
-            "width": 100,
+            "preferences": { "length": 100 },
             "source": {
               "requirement" : null
             },
@@ -1624,7 +1624,7 @@
             "name": "unincMuniR",
             "unique": false,
             "type": "text",
-            "width": 100,
+            "preferences": { "length": 100 },
             "source": {
               "requirement" : null
             },
@@ -1655,7 +1655,7 @@
             "name": "nbrhdCommL",
             "unique": false,
             "type": "text",
-            "width": 100,
+            "preferences": { "length": 100 },
             "source": {
               "requirement" : null
             },
@@ -1686,7 +1686,7 @@
             "name": "nbrhdCommR",
             "unique": false,
             "type": "text",
-            "width": 100,
+            "preferences": { "length": 100 },
             "source": {
               "requirement" : null
             },
@@ -1717,7 +1717,7 @@
             "name": "zipCodeL",
             "unique": false,
             "type": "text",
-            "width": 7,
+            "preferences": { "length": 7 },
             "source": {
               "requirement" : null
             },
@@ -1748,7 +1748,7 @@
             "name": "zipCodeR",
             "unique": false,
             "type": "text",
-            "width": 7,
+            "preferences": { "length": 7 },
             "source": {
               "requirement" : null
             },
@@ -1779,7 +1779,7 @@
             "name": "postCommL",
             "unique": false,
             "type": "text",
-            "width": 40,
+            "preferences": { "length": 40 },
             "source": {
               "requirement" : null
             },
@@ -1810,7 +1810,7 @@
             "name": "postCommR",
             "unique": false,
             "type": "text",
-            "width": 40,
+            "preferences": { "length": 40 },
             "source": {
               "requirement" : null
             },
@@ -1855,7 +1855,7 @@
               "Trail",
               "Other"
             ],
-            "width": 15,
+            "preferences": { "length": 15 },
             "source": {
               "requirement" : "required"
             },
@@ -1886,7 +1886,7 @@
             "name": "oneWay",
             "unique": false,
             "type": "text",
-            "width": 2,
+            "preferences": { "length": 2 },
             "source": {
               "requirement" : "required"
             },
@@ -2085,7 +2085,7 @@
               "A74",
               "A75"
             ],
-            "width": 3,
+            "preferences": { "length": 3 },
             "source": {
               "requirement" : null
             },
@@ -2176,7 +2176,7 @@
             "name": "gcFullName",
             "unique": false,
             "type": "text",
-            "width": 100,
+            "preferences": { "length": 100 },
             "source": {
               "requirement" : null
             },
@@ -2207,7 +2207,7 @@
             "name": "gcLgFlName",
             "unique": false,
             "type": "text",
-            "width": 100,
+            "preferences": { "length": 100 },
             "source": {
               "requirement" : null
             },
