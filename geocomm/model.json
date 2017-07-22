@@ -449,7 +449,7 @@
       }
     ],
     "defaultIdentity": "gcUnqID",
-    "featureClasses": [
+    "featureTables": [
       {
         "name": "RoadCenterline",
         "geometryType": "Polyline",
