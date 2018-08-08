@@ -48,8 +48,6 @@ This section defines the general structure of the *Model* object defined in a `m
         * *null* or *none* : the source data is neither required, nor requested, to provide this data field
         * *requested* : the source data may, optionally, provide this data field
         * *required* : the source data *must* provide this data field
-    * __requested__ : the source data provider is invited to provide the data that will appear in this field
-    * __required__ : the source data provider *must* provide the data that will appear in this field
     * __analogs__ : a list of field name patterns that may be found in source data to hold data appropriate for this field
 * __target__ : contracts with the target data consumer and advice to `Mother` to be used during processing
     * __calculated__ : the value in this field is calculated
